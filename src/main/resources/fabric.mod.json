@@ -5,7 +5,7 @@
   "name": "LastEcho NPCs",
   "description": "Adds the ability to spawn NPCs, change their skins, size, behaviour and lines.",
   "authors": ["LastEcho"],
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/lastecho_npc/icon.png",
   "environment": "*",
   "entrypoints": {
