@@ -1,0 +1,264 @@
+{
+  "personalities": [
+    {
+      "name": "Warm",
+      "messages": [
+        "There you are. I was starting to wonder.",
+        "Come in, come in. Kettle's still warm.",
+        "Rough day? You don't have to say. Sit a minute.",
+        "I saved you the good chair. Don't tell anyone.",
+        "You look like you could use a bite. I've got bread, if you want it.",
+        "Wasn't sure you'd make it back today.",
+        "Oh, good. Someone I can talk to who doesn't grunt.",
+        "How've you been? No, really.",
+        "I heard the wind pick up and thought of you. Strange, I know.",
+        "There's tea. Or something stronger, if it's been that kind of day.",
+        "You're always welcome here. Even when you're not.",
+        "Don't just stand in the doorway. You're letting the cold in.",
+        "I've been meaning to ask you something. Later, though. You first.",
+        "You've got that look. The one you get before you say something stupid.",
+        "Stay for a bit. I don't get many visitors who listen."
+      ]
+    },
+    {
+      "name": "Surly",
+      "messages": [
+        "Oh. You.",
+        "What do you want?",
+        "Make it quick. I'm not in the mood.",
+        "You're standing in my light.",
+        "If it's bad news, save it. I've had enough.",
+        "Don't touch that.",
+        "I was having a quiet moment. It's gone now.",
+        "No. Whatever it is, no.",
+        "You need something? Spit it out.",
+        "Great. Another conversation.",
+        "I'm not moving. You can go around.",
+        "I don't know. Ask someone who cares.",
+        "Stop hovering.",
+        "If you're going to talk, at least say something useful.",
+        "I've got work to do. Or I did."
+      ]
+    },
+    {
+      "name": "Vendor",
+      "messages": [
+        "Have a look. Don't touch the blades.",
+        "Fresh stock. Well. Fresher than yesterday.",
+        "That one? Good weight. Bad temper, but good weight.",
+        "You break it, you buy it. I mean it.",
+        "I'll do you a deal. Not a good one, but a deal.",
+        "Looking or buying? Either way, don't block the table.",
+        "See something you like?",
+        "That's real leather. Mostly.",
+        "I've had that for years. No one's ever asked about it.",
+        "You've got taste. Expensive taste. Bad combination.",
+        "I can knock a coin off. Not two. Don't push it.",
+        "It's not stolen. Probably.",
+        "Hold it up to the light. See? No cracks.",
+        "Last one. Until I get more.",
+        "You gonna buy, or are we just admiring each other?"
+      ]
+    },
+    {
+      "name": "Worried",
+      "messages": [
+        "Wait. Did you hear that?",
+        "Keep your voice down. Please.",
+        "I don't like the look of that sky.",
+        "You came alone? Why?",
+        "I've been hearing things at night. Probably nothing.",
+        "Don't stand so close to the edge.",
+        "Something's wrong. I can't explain it.",
+        "Did you lock your door last night?",
+        "I counted the windows again. One's still dark.",
+        "If you see anyone watching, don't look back.",
+        "I'm not crazy. I'm just... paying attention.",
+        "You should go inside. Before it gets dark.",
+        "Promise me you'll be careful.",
+        "I haven't slept. Every time I close my eyes, I hear it.",
+        "Just... stay where I can see you. Please."
+      ]
+    },
+    {
+      "name": "Curious",
+      "messages": [
+        "Oh, what's that?",
+        "No, wait. Show me again.",
+        "How does that work? Exactly?",
+        "I've never seen one with that pattern.",
+        "Where'd you find it?",
+        "Does it always make that noise?",
+        "I read something about this. Or maybe I dreamed it.",
+        "What happens if you turn it upside down?",
+        "Can I try? Just once.",
+        "You're not from around here, are you?",
+        "What's over that hill? No one ever says.",
+        "That's odd. I like odd.",
+        "Do that again. Slower.",
+        "Why'd you do it that way?",
+        "Wait, don't leave yet. I have questions."
+      ]
+    },
+    {
+      "name": "Dreamy",
+      "messages": [
+        "Hm? Sorry. I was watching the dust.",
+        "Do you ever think about how clouds are just... there?",
+        "I forgot what I was doing. It'll come back.",
+        "Look at that bird. No, over there. By the roof.",
+        "The light's nice today. Soft.",
+        "I had a dream about this. Not this exactly. But close.",
+        "Time's doing that thing again.",
+        "I think I left something somewhere. Can't remember what.",
+        "You ever just stop? And everything keeps going?",
+        "I like the sound of the rain. Even when it's not raining.",
+        "What were we talking about?",
+        "I'm here. Mostly.",
+        "The world looks different when you tilt your head.",
+        "I wonder if fish know they're wet.",
+        "Don't mind me. I'm just... floating."
+      ]
+    },
+    {
+      "name": "Blunt",
+      "messages": [
+        "Say it.",
+        "No.",
+        "That's a bad idea.",
+        "You're overthinking it.",
+        "I don't have time for this.",
+        "Cut the crap.",
+        "You look terrible.",
+        "It won't work.",
+        "Is that all?",
+        "I'm not going to lie to make you feel better.",
+        "Stop talking. Start doing.",
+        "The answer's no. Next question.",
+        "You're wasting my time.",
+        "Just tell me what you want.",
+        "We're done here."
+      ]
+    },
+    {
+      "name": "Gloomy",
+      "messages": [
+        "Another day. Great.",
+        "Doesn't matter.",
+        "It'll rain. It always does.",
+        "I've seen worse. Not much worse, but worse.",
+        "What's the point?",
+        "Don't get your hopes up.",
+        "I'm just waiting for the end of the shift.",
+        "Everything's heavy today.",
+        "I remember when this place wasn't so... this.",
+        "Nothing changes. Not really.",
+        "I'll be fine. Probably.",
+        "Sun's out. Shame.",
+        "Just leave me alone. Please.",
+        "It's not worth fighting.",
+        "I miss the old days. Even the bad ones."
+      ]
+    },
+    {
+      "name": "Smith",
+      "messages": [
+        "Hold this. No, like that.",
+        "Steel's been fighting me all morning.",
+        "Don't touch that. It's hot.",
+        "I said it's hot. Why does no one listen?",
+        "This hinge? It'll outlast the wall.",
+        "Bellows are acting up again.",
+        "Bring it here. I'll take a look.",
+        "That'll be a few hours. Maybe more.",
+        "You need a shoe for that horse?",
+        "Coal's low. Might close early.",
+        "See how the edge catches? That's good.",
+        "Ugly design. Strong, though.",
+        "Give it a swing. Go on.",
+        "I've got a new batch coming. Eventually.",
+        "Quiet day. I don't trust it."
+      ]
+    },
+    {
+      "name": "Child",
+      "messages": [
+        "You're tall.",
+        "Got a coin?",
+        "I found a frog. Want to see?",
+        "I'm not supposed to talk to you. But I am.",
+        "Look what I drew.",
+        "Why is the sky blue? No one tells me.",
+        "Can I come with you? I won't be annoying. Much.",
+        "I dare you to climb that.",
+        "I'm hungry. Are you hungry?",
+        "My friend says there's ghosts. I think he's lying.",
+        "You have a big stick.",
+        "I can run faster than you. Probably.",
+        "Tag. You're it.",
+        "I ate too much. My stomach hurts.",
+        "Are you a hero? You look like one. Sort of."
+      ]
+    },
+    {
+      "name": "Servant",
+      "messages": [
+        "You called?",
+        "Your usual spot is ready.",
+        "Shall I take that?",
+        "The fire's lit in the study.",
+        "Your bath is drawn. Not too hot.",
+        "I aired the chambers. They smelled of dust.",
+        "Supper will be up shortly.",
+        "I pressed your formal coat. The gray one.",
+        "Is there anything else?",
+        "I'll fetch your horse.",
+        "Don't mind the mess. I'll clear it.",
+        "I polished your boots. They were scuffed.",
+        "If you need me, I'm down the hall.",
+        "I took the liberty of storing your things.",
+        "At your service. As always."
+      ]
+    },
+    {
+      "name": "Knight",
+      "messages": [
+        "Standing guard. Thrilling work.",
+        "Northern wall's quiet. Too quiet.",
+        "That armor looks heavier than mine.",
+        "You ever feel like something's out there?",
+        "I could use a drink after this.",
+        "Keep your wits about you.",
+        "Captain's in a mood again.",
+        "I've seen battles. This isn't over.",
+        "My sword arm's getting stiff.",
+        "Archers are drilling. Again.",
+        "Stay behind me if it goes bad.",
+        "Rations are worse than usual.",
+        "I'd rather be home. But duty.",
+        "We move at dawn. Ready?",
+        "I'll hold the line. Don't worry."
+      ]
+    },
+    {
+      "name": "King",
+      "messages": [
+        "The crown gets heavier. Not lighter.",
+        "State your business. Quickly.",
+        "I've ruled long enough to know I know nothing.",
+        "You're direct. I appreciate that.",
+        "The kingdom is restless. I feel it.",
+        "I'll consider it. Don't push.",
+        "Bring me the eastern reports.",
+        "I don't suffer fools.",
+        "My word is law. My law is just.",
+        "I miss walking the streets unnoticed.",
+        "You have my ear. Use it well.",
+        "This council will be the death of me.",
+        "I'll have the scribe draft a decree.",
+        "A king is only as strong as his people.",
+        "Leave me. I'm tired."
+      ]
+    }
+  ]
+}

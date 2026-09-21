@@ -1,0 +1,16 @@
+# Each line is a texture path, absolute relative to assets root.
+# Comments and blank lines are ignored.
+assets/lastecho_npc/textures/entity/human0.png
+assets/lastecho_npc/textures/entity/human1.png
+assets/lastecho_npc/textures/entity/human3.png
+assets/lastecho_npc/textures/entity/human4.png
+assets/lastecho_npc/textures/entity/human5.png
+assets/lastecho_npc/textures/entity/human6.png
+assets/lastecho_npc/textures/entity/human7.png
+assets/lastecho_npc/textures/entity/human8.png
+assets/lastecho_npc/textures/entity/human9.png
+assets/lastecho_npc/textures/entity/human10.png
+assets/lastecho_npc/textures/entity/human11.png
+assets/lastecho_npc/textures/entity/human12.png
+assets/lastecho_npc/textures/entity/human13.png
+assets/lastecho_npc/textures/entity/human14.png

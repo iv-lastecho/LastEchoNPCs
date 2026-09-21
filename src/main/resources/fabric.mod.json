@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "lastecho_npc",
+  "version": "${version}",
+  "name": "LastEcho NPCs",
+  "description": "Adds the ability to spawn NPCs, change their skins, size, behaviour and lines.",
+  "authors": ["LastEcho"],
+  "license": "CC0-1.0",
+  "icon": "assets/lastecho_npc/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "retroapi": [
+      "com.LastEcho.lastecho_npc.LastEchoNPCMod"
+    ],
+    "retroapi-client": [
+        "com.LastEcho.lastecho_npc.LastEchoNPCModClient"
+    ]
+  },
+  "mixins": [
+    "lastecho_npc.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.3",
+    "minecraft": "1.0.0-beta.7.3",
+    "retroapi": ">=0.3.7",
+    "osl-entrypoints": ">=0.4.0"
+  }
+}

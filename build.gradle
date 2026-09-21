@@ -1,0 +1,90 @@
+plugins {
+	id 'java'
+	id 'net.fabricmc.fabric-loom-remap' version '1.17.13'
+	id 'ploceus' version '1.17.4'
+	// Also builds a babric variant of your mod (build/libs/<name>-babric.jar)
+	id 'com.periut.retroconvert' version "${retroconvert_version}"
+}
+
+base {
+	archivesName = project.archives_base_name
+}
+version = "${project.version}+mc${project.minecraft_version}"
+group = project.maven_group
+
+ploceus {
+	setIntermediaryGeneration(2)
+}
+
+repositories {
+	mavenLocal()
+	maven { url = 'https://matthewperiut.github.io/repository' } // gen2 mod deps
+	maven { url = 'https://maven.glass-launcher.net/releases/' } // biny
+	// Loom >= 1.17 claims the whole org.lwjgl group for Mojang's libraries repo, which mirrors
+	// LWJGL 3.4.0 only for the platforms Minecraft ships - retrodragon also needs
+	// natives-linux-arm64, which lives on Central. Claim the group for Central too.
+	exclusiveContent {
+		forRepository { mavenCentral() }
+		filter { includeGroup('org.lwjgl') }
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	// ORDER MATTERS: these six must come BEFORE the mappings dependency.
+	clientExceptions ploceus.raven(project.client_raven_build, 'client')
+	serverExceptions ploceus.raven(project.server_raven_build, 'server')
+	clientSignatures ploceus.sparrow(project.client_sparrow_build, 'client')
+	serverSignatures ploceus.sparrow(project.server_sparrow_build, 'server')
+	clientNests "net.glasslauncher:biny-nests:b1.7.3-client+build.${project.biny_nests_build}"
+	serverNests "net.glasslauncher:biny-nests:b1.7.3-server+build.${project.biny_nests_build}"
+
+	mappings ploceus.mappings("net.glasslauncher:biny-ornithe:b1.7.3+build.${project.biny_mappings}:mergedv2")
+
+	ploceus.dependOsl(project.osl_version)
+
+	// Exclude OSL's block/item registries (they clash with StationAPI if present)
+	configurations.modImplementation {
+		exclude group: 'net.ornithemc.osl-gen2', module: 'blocks'
+		exclude group: 'net.ornithemc.osl-gen2', module: 'items'
+	}
+
+	modImplementation "com.periut:retroapi:${project.retroapi_version}"
+	modImplementation("com.periut:retrocommands:${project.retrocommands_version}") {
+		exclude group: 'net.modificationstation'
+		exclude group: 'net.glasslauncher.mods'
+		exclude group: 'com.github.GeyserMC'
+	}
+	modRuntimeOnly "com.periut:retrodragon:${project.retrodragon_version}"
+}
+
+// Exclude Legacy Fabric LWJGL 2 at runtime only (retrodragon provides LWJGL 3)
+configurations.matching { it.name.toLowerCase().contains('runtime') }.configureEach {
+	exclude group: 'org.lwjgl.lwjgl'
+}
+
+processResources {
+	inputs.property 'version', version
+	filesMatching('fabric.mod.json') {
+		expand 'version': version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.encoding = 'UTF-8'
+	it.options.release = 21
+}
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
+	withSourcesJar()
+}
+
+jar {
+	from('LICENSE') {
+		rename { "${it}_${base.archivesName.get()}" }
+	}
+}
