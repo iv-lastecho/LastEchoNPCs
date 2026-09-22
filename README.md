@@ -4,7 +4,7 @@ A lightweight NPC mod for **Minecraft Beta 1.7.3**, built with [RetroAPI](https:
 
 LastEchoNPC adds customizable human NPCs that can wander, follow players, talk, react to items, and be personalized with skins, personalities, and voices.
 
-[![LastEcho's NPCs Showcase](https://img.youtube.com/vi/WogYXGxWTJE/maxresdefault.jpg)](https://www.youtube.com/watch?v=WogYXGxWTJE)
+[![LastEcho's NPCs Showcase](https://img.youtube.com/vi/gMO3lvIQhx8/maxresdefault.jpg)](https://www.youtube.com/watch?v=gMO3lvIQhx8)
 
 ---
 
