@@ -248,6 +248,13 @@ public class HumanEntity extends AnimalEntity implements RetroMobSpawnData {
     // --- Movement ---
     @Override
     protected void tickLiving() {
+        
+        // On remote clients, keep the texture in sync with the data-tracker value.
+        // The server owns the skin index; clients just read it and re-derive the texture.
+        if (world.isRemote) {
+            updateTextureFromSkin();
+        }
+        
         if (messageCooldown > 0) {
             messageCooldown--;
         }
@@ -369,7 +376,9 @@ public class HumanEntity extends AnimalEntity implements RetroMobSpawnData {
 
             // ---- Existing interactions ----
             if (stack.itemId == Item.STICK.id) {
-                cycleSkin();
+                if (!world.isRemote) {
+                    cycleSkin();
+                }
                 return true;
             }
             if (stack.itemId == Item.FEATHER.id) {
