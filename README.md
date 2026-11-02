@@ -1,6 +1,18 @@
+## Note on RetroAPI version compatibility
+
+This mod ships a patched copy of `com.periut.retrotweaks.feature.recipe.RecipeTweaks`
+to work around a bug in RetroAPI 0.4.0 and 0.4.1 where crafting and smelting
+recipes registered by mods are wiped at startup (the recipe list is rebuilt from
+a vanilla-only snapshot after mod registration runs).
+
+When a RetroAPI version is released with the fix upstream, this bundled class
+will be removed and the version pin relaxed.
+
+The patched class is a derivative of code from RetroAPI.
+
 # LastEchoNPC
 
-A lightweight NPC mod for **Minecraft Beta 1.7.3**, built with [RetroAPI](https://github.com/periut/retroapi) and Fabric.
+A lightweight NPC mod for **Minecraft Beta 1.7.3**, built with [RetroAPI]([https://github.com/periut/retroapi](https://github.com/matthewperiut/RetroAPI)) and Fabric.
 
 LastEchoNPC adds customizable human NPCs that can wander, follow players, talk, react to items, and be personalized with skins, personalities, and voices.
 
@@ -189,7 +201,7 @@ The engine selects one variant at random. No additional registration is required
 ## Installation
 
 1. Install **Fabric Loader** for Minecraft Beta 1.7.3 through [Babric](https://babric.github.io/) or **Ornithe**.
-2. Download and place [RetroAPI](https://github.com/periut/retroapi) in your `mods/` folder.
+2. Download and place [RetroAPI]([https://github.com/periut/retroapi](https://github.com/matthewperiut/RetroAPI)) in your `mods/` folder.
 3. Place `lastecho_npc-<version>.jar` in your `mods/` folder.
 4. Launch the game.
 
@@ -266,6 +278,6 @@ This mod is released under the **MIT License**. See [`LICENSE`](LICENSE) for det
 
 ## Credits
 
-* Built with [RetroAPI](https://github.com/periut/retroapi) by periut.
+* Built with [RetroAPI]([https://github.com/periut/retroapi](https://github.com/matthewperiut/RetroAPI)) by periut.
 * Skin textures sourced from community skin packs.
 * Thanks to the Beta 1.7.3 modding community, including **Babric**, **Ornithe**, and **StationAPI**.
