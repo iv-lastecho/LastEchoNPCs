@@ -6,7 +6,7 @@ recipes registered by mods are wiped at startup (the recipe list is rebuilt from
 a vanilla-only snapshot after mod registration runs).
 
 When a RetroAPI version is released with the fix upstream, this bundled class
-will be removed and the version pin relaxed.
+will be removed.
 
 The patched class is a derivative of code from RetroAPI.
 
